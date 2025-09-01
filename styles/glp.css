@@ -1698,35 +1698,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
 
         .combined-section {
@@ -1947,20 +1918,20 @@
         .image-front.conversion-bg {
             background-image:
                radial-gradient(circle at center, transparent 80%, #1caf2322 70%, #04ff1023 90%),
-             url('./assets/quees.webp');
+             url('.././assets/quees.webp');
         }
 
         .image-back.conversion-info {
-            background-image: url('./assets/queesB.webp');
+            background-image: url('.././assets/queesB.webp');
             background: linear-gradient(135deg, #2ece7199 0%, #16a085fb 100%),
-                url('./assets/queesB.webp');
+                url('.././assets/queesB.webp');
             background-size: cover;
             background-position: center;
         }
 
         .image-front.modificaciones-bg {
             background-image:
-                url('./assets/stagB.png');
+                url('.././assets/stagB.png');
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
@@ -1971,7 +1942,7 @@
         .image-back.modificaciones-info {
             background-image:
                 radial-gradient(circle at center, transparent 40%, #2ece714a 70%, #16a0857b 100%),
-                url('./assets/stag.webp');
+                url('.././assets/stag.webp');
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
@@ -1982,7 +1953,7 @@
         .image-front.cambio-bg {
             background-image:
                 radial-gradient(circle at center, transparent 40%, #2ece714a 70%, #16a0857b 100%),
-                url('./assets/board.avif');
+                url('.././assets/board.avif');
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
@@ -1993,7 +1964,7 @@
         .image-back.cambio-info {
             background-image:
                 radial-gradient(circle at center, transparent 40%, #2ece714a 70%, #16a0857b 100%),
-                url('./assets/boardB.webp');
+                url('.././assets/boardB.webp');
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
@@ -2004,7 +1975,7 @@
         .image-front.motor-bg {
             background-image:
                 radial-gradient(circle at top, transparent 40%, #0d2cda4a 70%, #1b791f7b 90%),
-                url('./assets/flota.jpg');
+                url('.././assets/flota.jpg');
             background-size: contain; 
             background-position: center; 
             background-repeat: no-repeat; 
@@ -2014,7 +1985,7 @@
 
         .image-back.motor-info {
             background-image:
-                url('./assets/engine.webp');
+                url('.././assets/engine.webp');
             background-size: contain; 
             background-position: center; 
             background-repeat: no-repeat; 
@@ -2460,3 +2431,60 @@
             }
         }
  
+
+
+
+
+
+    
+        /* Estilos para el chatbot (se añadirán dinámicamente) */
+        .chatbot-styles {
+            display: none;
+        }
+
+        /* Estilos para la burbuja de chat (añadidos directamente) */
+        .chat-bubble {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+            transition: transform 0.3s ease;
+        }
+
+        .chat-bubble:hover {
+            transform: scale(1.1);
+        }
+
+        .chat-bubble svg {
+            width: 30px;
+            height: 30px;
+        }
+
+        .notification-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: #ef4444;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .hidden {
+            display: none !important;
+        }
